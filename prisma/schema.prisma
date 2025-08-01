@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")    .env 파일에 있음
+}
+
+model NewsItem {
+  id         Int      @id @default(autoincrement())
+  title      String
+  link       String   @unique
+  published  DateTime
+  summary    String?
+  category   String
+  seen       Boolean  @default(false)
+  liked      Boolean  @default(false)
+  createdAt  DateTime @default(now())
+}
