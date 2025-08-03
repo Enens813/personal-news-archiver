@@ -1,0 +1,58 @@
+# Node.js 기본
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 환경변수 / 시크릿
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Build outputs
+dist/
+build/
+.cache/
+.next/
+out/
+*.tsbuildinfo
+
+# Logs / Cache
+logs/
+*.log
+.cache/
+coverage/
+
+
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+prisma/migrations/*/README.md  # auto-generated
+prisma/generated/              # custom generate target 시
+
+# Optional: coverage, test reports
+coverage/
+*.lcov
+
+# OS / Editor 별
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Optional: lockfiles (선택사항, 팀에 따라 다름)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
