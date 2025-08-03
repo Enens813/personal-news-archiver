@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")    .env 파일에 있음
+  url      = env("DATABASE_URL")
 }
 
 model NewsItem {
